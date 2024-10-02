@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="img/logo.png" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>FitLife</title>
+
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <img
+          src="img/logo.png"
+          alt="logo"
+          class="nav__logo"
+          id="logo"
+          developer="Hvozd Severyn"
+          data-version-number="2.0"
+        />
+        <div class="nav__text">FitLife</div>
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a class="nav__link" href="#section--1">Переваги</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--2">Відгуки</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--3">Про нас</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__title">
+        <h1>
+          FitLife
+          <span class="highlight">Ваш</span>
+          особистий<br />
+          <span class="highlight">тренер</span>
+        </h1>
+        <h4>
+          Відслідковуйте свої спортивні результати, досягайте цілей та
+          залишайтеся мотивованими.
+        </h4>
+        <button class="btn--text btn--scroll-to">
+          Дізнатись більше &DownArrow;
+        </button>
+        <img src="img/bank.png" class="header__img" alt="Зображення" />
+      </div>
+    </header>
+    <section class="section" id="section--1">
+      <div class="section__title">
+        <h2 class="section__description">Переваги</h2>
+        <h3 class="section__header">Ключові особливості FitLife</h3>
+      </div>
+
+      <div class="services">
+        <img
+          src="img/stock-exchange-lazy.jpg"
+          data-src="img/stock-exchange.jpg"
+          alt="Числа на екрані"
+          class="services__img lazy-img"
+        />
+        <div class="services__feature">
+          <div class="services__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-monitor"></use>
+            </svg>
+          </div>
+          <h5 class="services__header">1. Персоналізовані цілі</h5>
+          <p>
+            Встановлюйте індивідуальні спортивні цілі, адаптовані під ваш рівень
+            підготовки та слідкуйте за своїм прогресом щодня. Ви можете обирати
+            між різними типами тренувань, будь то кардіо, силові вправи або
+            йога. FitLife дозволяє коригувати ваші цілі в залежності від того,
+            як швидко ви прогресуєте, і надає поради, щоб допомогти досягти
+            нових висот.
+          </p>
+        </div>
+
+        <div class="services__feature">
+          <div class="services__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-trending-up"></use>
+            </svg>
+          </div>
+          <h5 class="services__header">2. Відслідковування результатів</h5>
+          <p>
+            Легко записуйте свої тренування, зберігайте статистику та аналізуйте
+            динаміку для досягнення кращих результатів. Додаток автоматично
+            генерує графіки вашого прогресу, що допоможе вам візуально бачити,
+            як ваші зусилля відбиваються на результатах. Ви можете порівнювати
+            свої досягнення з попередніми періодами та отримувати корисні
+            інсайти для покращення.
+          </p>
+        </div>
+        <img
+          src="img/business-lazy.jpg"
+          data-src="img/business.jpg"
+          alt="Тренд на графику"
+          class="services__img lazy-img"
+        />
+
+        <img
+          src="img/payment-lazy.jpg"
+          data-src="img/payment.jpg"
+          alt="Кредитна карта"
+          class="services__img lazy-img"
+        />
+        <div class="services__feature">
+          <div class="services__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-credit-card"></use>
+            </svg>
+          </div>
+          <h5 class="services__header">3. Спільнота та підтримка</h5>
+          <p>
+            Залишайтеся мотивованими, приєднуючись до спортивної спільноти.
+            Діліться досягненнями та підтримуйте один одного через спеціальні
+            групи та чати, де можна отримати поради від однодумців або знайти
+            тренера. Ви можете створювати виклики для інших користувачів або
+            приймати участь у групових активностях, що робить процес тренувань
+            більш цікавим і соціальним.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="section--2">
+      <div class="section__title section__title--reviews">
+        <h2 class="section__description">Все ще не впевнені?</h2>
+        <h3 class="section__header">
+          Тисячі користувачів вже досягають своїх спортивних цілей з FitLife.
+        </h3>
+      </div>
+
+      <div class="slider">
+        <div class="slide slide--1">
+          <div class="review">
+            <h5 class="review__header">Мій прогрес став більш очевидним!</h5>
+            <blockquote class="review__text">
+              Завдяки FitLife я нарешті можу систематично відслідковувати свої
+              тренування та досягати поставлених цілей. Інтерфейс простий у
+              використанні, а поради допомагають мені залишатися на правильному
+              шляху.
+            </blockquote>
+            <address class="review__author">
+              <img
+                src="img/user-1.png"
+                alt="Фото користувача"
+                class="review__photo"
+              />
+              <h6 class="review__name">Олександра Мищенко</h6>
+              <p class="review__location">Київ, Україна</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide slide--2">
+          <div class="review">
+            <h5 class="review__header">Зручний спосіб досягати фітнес-цілей</h5>
+            <blockquote class="review__text">
+              FitLife допоміг мені залишатися мотивованим і робити тренування
+              частиною мого щоденного розкладу. Система відстеження результатів
+              чудова, і я можу бачити реальний прогрес кожного дня.
+            </blockquote>
+            <address class="review__author">
+              <img
+                src="img/user-2.png"
+                alt="Фото користувача"
+                class="review__photo"
+              />
+              <h6 class="review__name">Рей Уілліс</h6>
+              <p class="review__location">Нью-Йорк, USA</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide slide--3">
+          <div class="review">
+            <h5 class="review__header">
+              Чудова спільнота для фітнес-ентузіастів!
+            </h5>
+            <blockquote class="review__text">
+              Окрім зручних функцій для відстежування тренувань, я знайшов
+              чудову підтримку в спільноті FitLife. Інші користувачі постійно
+              мотивують мене, і ми разом досягаємо успіху.
+            </blockquote>
+            <address class="review__author">
+              <img
+                src="img/user-3.png"
+                alt="Фото користувача"
+                class="review__photo"
+              />
+              <h6 class="review__name">Гліб Михайлів</h6>
+              <p class="review__location">Зарків, Україна</p>
+            </address>
+          </div>
+        </div>
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+        <div class="dots dots__dot"></div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <ul class="footer__nav">
+        <li class="footer__item" id="section--3">
+          <a class="footer__link" href="#section--1">Переваги</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#section--2">Відгуки</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#section--3">Про нас</a>
+        </li>
+
+        <li class="footer__item">
+          <a
+            class="footer__link"
+            href="https://www.facebook.com/"
+            target="_blank"
+            >Facebook</a
+          >
+        </li>
+        <li class="footer__item">
+          <a
+            class="footer__link"
+            href="https://www.instagram.com/"
+            target="_blank"
+            >Instagram</a
+          >
+        </li>
+        <li class="footer__item">
+          <a
+            class="footer__link"
+            href="https://www.twitter.com/"
+            target="_blank"
+            >Twitter</a
+          >
+        </li>
+      </ul>
+
+      <img src="img/logo.png" alt="Логотип" class="footer__logo" />
+      <p class="footer__copyright">НЕ ВТРАЧАЙ ЧАС І ПРИЄДНУЙСЯ ДО НАС ЗАРАЗ</p>
+      <p class="footer__copyright">
+        &copy;
+        <a
+          class="footer__link masters-of-code-link"
+          target="_blank"
+          href="https://www.instagram.com/severun_gvozd/"
+          >Hvozd Severyn</a
+        >.
+      </p>
+    </footer>
+  </body>
+</html>
